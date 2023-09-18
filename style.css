@@ -17,6 +17,7 @@ body button:hover {
 }
 
 .calculator-container {
+    text-align: center;
     border: 20px;
     height: auto;
     width: 500px;
@@ -132,5 +133,4 @@ body button:hover {
 .zero-button {
     border-bottom-left-radius: 20px;
 }
-
 
