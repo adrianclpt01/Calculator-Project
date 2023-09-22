@@ -9,9 +9,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Old+Permic&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Old+Permic&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class='header-container'>
+        <h1>Online Calculator</h1>
+    </div>
+    <div class="color-switcher">
 
+        <div class="switcher-btn">
+            <i class="fas fa-cog"></i>
+        </div>
+        
+        <h3>Select color</h3>
+      
+        <div class="theme-buttons-container">
+            <span class="theme-buttons" data-color="#8e44ad" style="background: #b96fd8;"></span>
+            <span class="theme-buttons" data-color="#3197c3" style="background: #3197c3;"></span>
+            <span class="theme-buttons" data-color="#d5a93a" style="background: #d5a93a;"></span>
+            <span class="theme-buttons" data-color="#b93163" style="background: #b93163;"></span>
+        </div>
+
+     
+    </div>
     <div class="calculator-container">
         <input type="text" class="display">
         
@@ -42,6 +65,7 @@
              
             <div class="column4">
                 <button class="operator" data-value="/">&#247;</button>
+                <button class="operator" data-value="DE">DE</button>
                 <button class="operator1" data-value="=">=</button>
 
             </div>

@@ -1,10 +1,20 @@
+:root {
+    --main-color: #8e44ad;
+}
+
 body {
+    margin: 0;
     display: flex;
     justify-content: center;
     font-family: 'Noto Sans Old Permic', sans-serif;
     font-weight: 100;
-    background: radial-gradient(#5ad6dc, #4c47b8);
+    cursor: url(icons8-cursor-48.png), auto;
+    position: relative;
+    background: var(--main-color);
+
 }
+
+
 .operator1:hover {
     background-color: rgb(240, 110, 50);
 }
@@ -19,10 +29,9 @@ body button:hover {
 .calculator-container {
     text-align: center;
     border: 20px;
-    height: auto;
+    height: 500px;
     width: 500px;
-    margin-top: 100px;
-
+    margin-top: 150px;
 }
 
 
@@ -33,6 +42,8 @@ body button:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     font-weight: 400;
+    cursor: url(icons8-cursor-48.png), auto;
+
 
 }
 
@@ -134,3 +145,84 @@ body button:hover {
     border-bottom-left-radius: 20px;
 }
 
+
+.color-switcher {
+  background-color: white;
+  position: fixed;
+  right: -175px;
+  margin-top: 25px;
+  width: 170px;
+}
+
+.color-switcher h3 {
+    color: var(--main-color);
+    align-items: center;
+    padding: 0;
+    text-align: center;
+}
+
+.color-switcher .switcher-btn {
+    width: 50px;
+    background-color: white;
+    color: var(--main-color);
+    position: absolute;
+    left: -60px;
+    font-size: 40px;
+    padding-left: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    cursor: pointer;
+    border-left: #db4d07 solid 3px;
+}
+
+
+
+.color-switcher .theme-buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 12px;
+}
+
+.color-switcher .switcher-btn i {
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.color-switcher .theme-buttons-container .theme-buttons {
+    display: block;
+    height: 50px;
+    width: 50px;
+    padding: 8px;
+    border-radius: 50px;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+
+.theme-buttons {
+    cursor: pointer;
+}
+
+.color-switcher.active {
+    right: 0;
+}
+
+.calculator-container button {
+    color: var(--main-color);
+}
+
+.header-container {
+    position: absolute;
+    top: 25px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
